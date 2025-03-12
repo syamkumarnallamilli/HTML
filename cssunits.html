@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .box {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 2px solid #333;
+        }
+        .fixed-width {
+            width: 300px;
+        }
+        .max-width {
+            max-width: 600px;
+        }
+        .min-width {
+            min-width: 200px;
+        }
+        .vh-box {
+            height: 30vh;
+        }
+        .vw-box {
+            width: 50vw;
+        }
+        .rem-box {
+            font-size: 2rem;
+        }
+        .px-box {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Units Demo</h1>
+    
+    <div class="box fixed-width">Fixed Width (300px)</div>
+    <div class="box max-width">Max Width (600px, shrinks if needed)</div>
+    <div class="box min-width">Min Width (200px, grows if needed)</div>
+    <div class="box vh-box">Height: 30vh (30% of viewport height)</div>
+    <div class="box vw-box">Width: 50vw (50% of viewport width)</div>
+    <div class="box rem-box">Font Size: 2rem (relative to root)</div>
+    <div class="box px-box">Font Size: 20px (fixed size)</div>
+</body>
+</html>

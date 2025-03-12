@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border: 3px solid red;
+        }
+
+        .container {
+            
+            
+            width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid black;
+            position: relative; /* Needed for absolute positioning */
+            height: 300px;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 150px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+
+        /* Static Position (Default) */
+        .static {
+            position: static;
+            background-color: gray;
+        }
+
+        /* Relative Position */
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 50px;
+            
+            
+            background-color: blue;
+        }
+
+        /* Absolute Position */
+        .absolute {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            bottom: 0;
+            left:20px;
+            background-color: red;
+        }
+
+        /* Fixed Position */
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: green;
+        }
+
+        /* Sticky Position */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Positioning Demo</h2>
+    
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    
+    <div class="container">
+        <p>This is a container div.</p>
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+    
+    <div class="box sticky">Sticky (Scroll down to see)</div>
+
+    <p style="margin-top: 100vh;">Scroll down to see the sticky box effect.</p>
+
+</body>
+</html> 
+
+

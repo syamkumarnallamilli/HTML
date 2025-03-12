@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>learning html</title>
+        <link rel="stylesheet" href="practise.css">
+        <style>
+            span{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#links">go to link section</a>
+        <p><b>Heading Tags</b></p>
+        <h1>Main title(largest)</h1>
+        <h2>subheading</h2>
+        <h3>smaller subheading</h3>
+        <h4>even smaller subheading</h4>
+        <h5>almost the smallest</h5>
+        <h6>smallest heading</h6>
+        <hr/>
+        <h2>paragraph tag </h2>
+        <p>This is a <b>paragraph</b> of text. It provides some <i>information</i> about the <del>topic</del>.</p>
+        <p>Another <strong>paragraph </strong> with more <em>details</em>.</p>
+        <hr style="border: 2px solid rgb(240, 7, 7);"/>
+        
+
+        <h2>List Tags</h2>
+        <ul>
+            <h3 style="color: blue;" >Mobile brands</h3>
+            <li>Samsung</li>
+                    <ul>
+                     <li>ultra 23</li>
+                     <li>m13</li>
+                    </ul>
+            <li>Iphone</li>
+            <li>vivo</li>
+            <ul>
+                <li>z1 pro</li>
+                <li>y21</li>
+                <li>t1g</li>
+               </ul>
+        </ul> 
+        <hr style="background-color: rgb(240, 7, 7); height: 1px; "> 
+        <ol type="A">
+            <h3> order list</h3>
+            <li type="A">apple</li>
+            <li type="a">banana</li>
+            <li type="I">orange</li>
+            <li>grapes</li>
+        </ol>        
+        <hr>
+        <h1>Description List</h1>
+        <dl>
+            <dt><h3 >Html :</h3></dt>
+            <dd><p>HTML is the standard <strong>markup language</strong> used to create the structure of web pages.<br> 
+                   It defines elements like headings, paragraphs, images, and links.</p></dd>
+                   <dt><h3>Css :</h3></dt>
+                   <dd> <p style="color:grey;">CSS is a <strong>styling language</strong> used to design web pages by controlling layout, colors, fonts, and spacing.</p></dd>
+                   <dt><h3 >Javascript :</h3></dt>
+                   <dd>
+                        <p>JavaScript is a <b>programming language</b> used to add interactivity to web pages, such as animations, form validation, and event handling.</p>
+                   </dd>
+        </dl>
+        <hr/>
+        <h1 id="link section">Hyperlink</h1>
+        <a href="https://WWW.google.com" target="_blank">click</a> <br>
+        <a href="index.html">calculator</a>
+        <h4>Link to a Specific Section of the Same Page (Using ID)</h4>
+        <h1 id="links">link section</h1>
+        <p>these section contains different types of anchot tags </p>
+        <hr>
+
+        <h1>Download a File</h1>
+        <p>Used to allow users to download files.</p>
+        <a href="syam_kumar_nallamilli resume.pdf" download> download file</a>
+        <p><b>download</b> attribute forces the browser to download the file instead of opening it.</p>
+
+            <h3>open an email client</h3>
+            <p>used to send an email directly from the browser</p>
+            <a href="mailto:syamkunmarnallamilli0@gmail.com">send an email</a>
+            <p>clicking <span >opens the default email</span> application</p>
+
+            <a href="mailto:support@company.com?subject=Help%20Request&body=Describe%20your%20issue%20here.">
+                Contact Support
+              </a>
+              <a href="mailto:feedback@website.com?subject=Website%20Feedback&body=I%20love%20your%20website!">
+                Give Feedback
+              </a>
+              <a href="mailto:invite@event.com?cc=friend@example.com&subject=Join%20our%20Event&body=You%20are%20invited!">
+                Send Invitation
+              </a>
+              <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&
+              subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+                Send mail with cc, bcc, subject and body
+              </a>
+                                         
+
+            <h3>make a phone call</h3>
+            <p>use dto allow one click calling</p>
+            <a href="tel:+7672046442">call us</a>
+            <p>works on mobile devices to directly dial the nummber</p>
+
+            <a href="practise1.html" onclick="alert('Hello!'); return true;">Click Me</a><br>
+            <a href="practise1.html" class="btn">click button</a>
+
+    </body>
+</html>

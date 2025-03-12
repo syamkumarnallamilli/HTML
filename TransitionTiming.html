@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Timing Functions</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            line-height: 50px;
+            transition: transform 1.5s;
+        }
+
+        .ease:hover { transition-timing-function: ease; }
+        .linear:hover { transition-timing-function: linear; }
+        .ease-in:hover { transition-timing-function: ease-in; }
+        .ease-out:hover { transition-timing-function: ease-out; }
+        .ease-in-out:hover { transition-timing-function: ease-in-out; }
+        .bezier:hover { transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+
+        .box:hover {
+            transform: translateX(200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box ease">Ease</div>
+        <div class="box linear">Linear</div>
+        <div class="box ease-in">Ease-In</div>
+        <div class="box ease-out">Ease-Out</div>
+        <div class="box ease-in-out">Ease-In-Out</div>
+        <div class="box bezier">Cubic Bezier</div>
+    </div>
+</body>
+</html>

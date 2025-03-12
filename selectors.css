@@ -1,0 +1,91 @@
+/* 1️⃣ Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2️⃣ Element Selector */
+p {
+    color: rgb(11, 11, 231);
+    font-size: 16px;
+}
+
+/* 3️⃣ Class Selector */
+.featured {
+    background-color: yellow;
+}
+
+/* 4️⃣ ID Selector */
+#main-heading {
+    text-align: center;
+    color: rgb(94, 255, 0);
+}
+
+/* 5️⃣ Grouping Selector */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: rgb(23, 23, 23);
+}
+
+/* 6️⃣ Descendant Selector */
+div p {
+    color: green;
+}
+
+/* 7️⃣ Child Selector */
+div > p {
+    color: rgb(255, 0, 230);
+}
+
+/* 8️⃣ Adjacent Sibling Selector */
+h1 + p {
+    color: rgb(15, 14, 2);
+}
+
+/* 9️⃣ General Sibling Selector */
+h1 ~ p {
+    font-size: 18px;
+    border:2px solid rgb(93, 0, 255);
+}
+
+/* 🔟 Attribute Selector */
+input[required] {
+    border: 2px solid red;
+}
+input[type="email"] {
+    background-color: rgb(10, 234, 36);
+}
+a[href^="https://"] {
+    color: rgb(233, 10, 10);
+}
+img[src$=".png"] {
+    border: 3px solid rgb(191, 8, 8);
+}
+
+/* 1️⃣1️⃣ Pseudo-classes */
+button:hover {
+    background-color: rgb(9, 17, 231);
+    color: white;
+}
+p:first-child {
+    font-weight: bold;
+}
+li:last-child {
+    color: red;
+}
+li:nth-child(odd) {
+    background-color: rgb(20, 180, 233);
+}
+
+/* 1️⃣2️⃣ Pseudo-elements */
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+p::first-line {
+    text-transform: uppercase;
+}
+::selection {
+    background-color: rgb(230, 230, 10);
+}

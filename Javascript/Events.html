@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <button onclick="alert('button clicked')">inline event handling</button>
+    <button id="btn1">method2</button>
+    <button id="eventlistener">addEventListener</button>
+    <button id="btn"> click me</button>
+    <img src="/aiImage.png" width="250px" onmouseover= mouseover() id="image" onmouseout=mouseout()>
+
+
+
+
+    <form id="data">
+        <h3>Payment and Checkout Form</h3>
+        <label for="username">FullName: </label>
+        <input type="text" name="username" id="username" placeholder="As Per Card.."  ><br><br>
+        <label for="card">Card Number:</label>
+        <input type="text" name="card" id="card" ><br><br>
+        <label for="month">Expiry Date:</label>
+        <input type="month" name="month" id="month" ><br><br>
+        <label for="cvv"> CVV:</label>
+        <!-- <input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" required><br><br> -->
+        <input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" maxlength="3"  oninvalid="this.setCustomValidity('CVV must be exactly 3 digits')" > <br><br>
+
+        <button type="submit" id="btn">Pay Now</button>
+    </form>
+
+
+
+
+    <script src="event.js"></script>
+</body>
+</html>

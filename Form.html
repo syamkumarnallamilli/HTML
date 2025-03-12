@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form>
+            <h3>Registration</h3>
+            Username: <input type="username" name="uname"><br><br>
+            Email: <input type="email" email="uemail" required><br><br>
+            <label  for="password">Password:</label>
+            <input type="password" id="password" pass="upass"><br>
+            <input type="submit" value="Register">
+        </form>
+        <hr>
+        <form>
+        <h3>Login</h3>
+        <label>Username:</label>
+        <input type="text" name="uname"><br><br>
+        <label for="upas">Password:</label>
+        <input type="password" name="upass" id="upas" > <br>
+        <button type="submit">signin</button>
+    </form>
+        <hr>
+        <form>
+        <h3>Contact and Feedback Form</h3>
+        <p>We will Get Back To You Asap</p>
+        <label for="userFN">First Name:</label>
+        <input type="text" firstName="ufname" id="userFN" required>
+        <label for="userLN">LastName</label>
+        <input type="text" lastname="ulname" id="userLN"><br><br>
+        <label for="userE"> Email:</label>
+        <input type="email" name="uemail" id="userE" required><br><br>
+        <label for="userPhone">Phone:</label>
+        <input type="tel" name="userTel" id="userPhone"  maxlength="10" required> <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter Your Feedback..." rows="3"  required></textarea><br><br>
+        <button type="submit">Send</button>
+        </form>
+        <hr>
+        <form>
+            <h3>Payment and Checkout Form</h3>
+            <label for="username">FullName: </label>
+            <input type="text" name="username" id="username" placeholder="As Per Card.." required ><br><br>
+            <label for="card">Card Number:</label>
+            <input type="text" name="card" id="card" required><br><br>
+            <label for="month">Expiry Date:</label>
+            <input type="month" name="month" id="month" required><br><br>
+            <label for="cvv"> CVV:</label>
+            <!-- <input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" required><br><br> -->
+            <input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" maxlength="3" required oninvalid="this.setCustomValidity('CVV must be exactly 3 digits')" > <br><br>
+
+            <button type="submit">Pay Now</button>
+        </form>
+        <hr>
+        <form>
+            <h3>Dropdown Menu</h3>
+            <label for="cars">Choose a Brand</label>
+            <select  id="cars" name="brand">
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="Ferrari" selected>Ferrari</option>
+                <option value="bugati">Bugati</option>
+                <option value="jaguar">Jaguar</option>
+                <option value="range rover">Range Rover</option>
+                <option value="skoda">Skoda</option>
+            </select> <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+        <form>
+            <h3>Checkboxes</h3>
+            <form>
+                <h3>Filter by Brand:</h3>
+                <input type="checkbox" id="samsung" name="brand" value="Samsung">
+                <label for="samsung">Samsung</label>
+            
+                <input type="checkbox" id="apple" name="brand" value="Apple">
+                <label for="apple">Apple</label>
+            
+                <input type="checkbox" id="oneplus" name="brand" value="OnePlus">
+                <label for="oneplus">OnePlus</label>
+            
+                <br><br>
+                <input type="submit" value="Apply Filter">
+            </form>
+            <hr>
+            <h3>Radio Buttons</h3>
+        <form >
+            <h3>Select Payment Methods:</h3>
+            <input type="radio" id="credit" name="payment" value="Credit Card" checked>
+            <label for="credit">Credit Card</label>
+            <input type="radio" id="debt" name="payment" value="debt card">
+            <label for="debt">Debt Card</label>
+            <input type="radio" id="upi" name="payment" value="upi"> 
+            <label for="upi">UPI</label><br><br>
+            <button type="submit"> Submit</button>    
+        </form>
+        <hr>
+        <form>
+            <h3>Summary</h3>
+            <details>
+                <summary>Click to See More Info</summary>
+                <p>This is hidden content that becomes visible when clicked.</p>
+            </details>
+            <br>
+        </form>
+        <hr>
+        <form>
+            <h3>Search Bar</h3>
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">🔍</button>     
+        </form>
+        <hr>
+        <form>
+            <h3>Hotel Booking Form</h3>
+            <label for="checkin">Check-in Date:</label>
+             <input type="date" id="checkin" name="checkin" required>
+              
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+              
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+              
+            <button type="submit">Book Now</button>
+        </form>
+        <hr>
+        <form>
+            <h3>File upload</h3>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+            <button type="submit">Submit</button>
+        </form>
+          
+    </body>
+</html>
