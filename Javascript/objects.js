@@ -7,6 +7,9 @@ let person={
 }
 console.log(person)
 console.log(person.salary)  //dot notation==>it must be fixed,property name is valid js identifier(no space,special character,number at the begining)
+for(let i in person){
+  console.log(i, ":",person[i])
+}
 
 //bracket notation
 //the property name has space or special character
@@ -25,6 +28,36 @@ console.log(person1[3])
 console.log(person1[key])
 console.log(person1["first name"])
 console.log(person1.lastName)
+
+
+console.log( "lastName" in person1)
+
+
+//using new
+const Person123 =new Object()
+Person123.name = "syam..."
+Person123.age= 23
+console.log(Person123)
+
+//using function as a constructor
+function Person12(name,empid,desg,salary){
+  // let obj=Object.create(null)
+  // obj.Name=name;
+  // obj.EmployeeId=empid;
+  // return obj;
+  this.Name=name;
+  this.EmployeeId=empid;
+
+}
+let User1=new Person12("syam.....",1234)
+console.log(User1.Name)
+console.log(JSON.stringify(User1))                 //output:Person12 { Name: 'syam', EmployeeId: 1234 }  to overcome this  we can create an object instead this keyword because its old version
+                            // this old version we can update this constructior by using class and constructor(recommended)
+                            //JavaScript object into a JSON (JavaScript Object Notation) string.
+// ..............................................
+
+
+
 
 const person2 = {
     firstName: "Spongebob",

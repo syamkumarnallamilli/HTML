@@ -264,6 +264,7 @@ console.log(squared1234)
 function buyProduct(product){
     return function(quantity){
         
+        
         return `your order ${quantity} ${product}s`
     }
 
@@ -271,3 +272,4 @@ function buyProduct(product){
 const ordershoe=buyProduct("shoes")
 console.log(ordershoe(2))
 console.log(ordershoe(3))
+
